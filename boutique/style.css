@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    padding:0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2{
+    letter-spacing: 0.05em;
+    color: rgb(95, 92, 92);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin:2rem 0 2rem 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.button{
+    transition: all 0.3s;
+}
+.button:hover{
+    transform: scale(1.2);
+}
+
+
+/* -----------------
+---   Navigation 
+-----------------*/
+.nav{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: rgba(17, 80, 138,0.7);
+    width: 100%;
+}
+.nav .logo{
+    height: 5rem;
+    width: auto;
+}
+.nav .list{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    list-style: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.nav .list .push{
+    margin-right: 9rem;
+}
+.nav .list li{
+    margin-right: 3rem;
+}
+.nav .list li a:hover{
+    text-decoration: underline;
+    color:rgba(98, 0, 60,0.8);;
+}
+@media screen and (max-width: 976px) {
+    .nav{
+        padding:3rem 0 3rem 1rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav{
+        padding:2rem 0 2rem 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav .list{
+        flex-direction: column;
+        margin-left: unset;
+    }
+    .nav .list li{
+        margin:unset;
+    }
+    .nav .list .push{
+        margin-right: unset;
+    }
+}
+
+/*************************
+*** pages-header
+**************************/
+
+.page-header{
+    min-height: 30vh;
+    background-color: #9cd5d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-header h1{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+/*************************
+*** boutique
+**************************/
+
+.boutique{
+    min-height: 100vh;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 3rem 0 3rem;
+}
+
+.boutique .product-card{
+    width: fit-content;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 2rem;
+    border: 2px solid rgba(233, 226, 226, 0.795);
+    margin-bottom: 2rem;
+    color: black;
+    transition: all 1s;
+    background-color: rgba(233, 226, 226, 0.795);
+}
+
+.boutique .product-card:hover{
+    transform: scale(1.09);
+}
+
+.boutique .product-card img{
+    height: 280px;
+    margin-bottom: 0.5rem;
+}
+
+.boutique .product-card .category{
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.boutique .product-card h4{
+    margin-bottom: 0.5rem;
+}
+
+.boutique .product-card .rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: red;
+    font:bold;
+    margin-bottom: 0.5rem;
+}
+
+.boutique .product-card .price{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+/*************************
+*** product page **********
+**************************/
+
+.product{
+    display: flex;
+    padding: 2rem;
+}
+
+.product img{
+    margin-right: 2rem;
+     
+}
+
+.product .product-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product .product-text h3{
+    font: bold;
+    margin-bottom: 0.5rem;
+}
+
+.product .product-text .price{
+    font: bold;
+    font-size: 25px;
+    margin-bottom: 0.5rem;
+}
+
+.product .product-text button{
+    width: max-content;
+    margin-bottom: 0.5rem;
+}
+
+.product .product-text .categorie{
+    margin-bottom: 0.5rem;
+}
+
+.product .product-text em{
+    color: red;
+}
+
+/*************************
+***     Footer
+**************************/
+.footer{
+    background-color: rgb(44, 131, 212);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1rem;
+    border-top: 3px solid black;
+    color: white;
+}

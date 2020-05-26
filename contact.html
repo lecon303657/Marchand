@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alpha agence web">
+    <meta name="keywords" content="Agence web, Alpha, digital product">
+    <meta name="author" content="Louis le conte">
+    <link rel="icon" href="image/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <img class="logo" src="image/logo.png" alt="logo image">
+        <ul class="list">
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="boutique/boutique.html">boutique</a></li>
+            <li><a href="team.html">équipe</a></li>
+            <li><a href="about.html">à propos</a></li>
+            <li class="push"><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    <header class="page-header">
+        <h1>Contact</h1>
+    </header>
+    <section class="contact">
+        <h2>Contactez-nous</h2>
+        <form class="form" method="POST" action="https://httpbin.org/post">
+            <input type="text" name="fname" id="fname" placeholder="Votre nom">
+            <input type="email" name="email" id="email" placeholder="Votre Email">
+            <input type="text" name="subject" id="subject" placeholder="subject">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
+            <input type="submit" value="submit" class='btn btn-outline-dark submit button'>
+        </form>
+    </section>
+    <footer class="footer">
+        <span>&copy; 2020 Alpha. Créé par Louis </span>
+    </footer>
+</body>
+</html>
